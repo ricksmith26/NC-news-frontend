@@ -18,6 +18,15 @@ class fullArticleView extends Component {
 
     this.setState({ comments, article });
   }
+  async componentDidUpdate(_, prevState) {
+    if (prevState.article.data !== this.state.article.data) {
+      const article = await api.getArticleById(
+        this.props.match.params.article_id
+      );
+      console.log(this.props.match.params.article_id);
+      this.setState({ article: article });
+    }
+  }
 
   render() {
     if (!this.state.comments.length) return <h1>Loading...</h1>;
@@ -32,6 +41,21 @@ class fullArticleView extends Component {
           {' '}
           <p> commments: {this.state.article.data.comments}</p>
         </Link>
+        <p> votes: {this.state.article.data.votes}</p>
+        <button
+          onClick={() =>
+            api.voteArticle(this.state.article.data._id, { vote: 'up' })
+          }
+        >
+          Vote up
+        </button>
+        <button
+          onClick={() =>
+            api.voteArticle(this.state.article.data._id, { vote: 'down' })
+          }
+        >
+          Vote down
+        </button>{' '}
       </div>
     );
   }

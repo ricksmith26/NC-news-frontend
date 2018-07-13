@@ -25,15 +25,7 @@ function AllArticles({ articles }) {
               <Link to={`/articles/${article._id}/comments`}>
                 {' '}
                 <button id={article._id}>Comments:{article.comments}</button>
-              </Link>
-              <button onClick={() => voteArticle(article._id, { vote: 'up' })}>
-                Vote up
-              </button>
-              <button
-                onClick={() => voteArticle(article._id, { vote: 'down' })}
-              >
-                Vote down
-              </button>{' '}
+              </Link>{' '}
               Votes: {article.votes}
             </li>
           );

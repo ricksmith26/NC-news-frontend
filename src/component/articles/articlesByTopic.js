@@ -8,9 +8,9 @@ class ArticlesByTopic extends Component {
     topicArticles: [],
     topic_name: ''
   };
+
   async componentDidUpdate(_, prevState) {
     if (prevState.topic_name !== this.state.topic_name) {
-      console.log(this.state.topic_name);
       const topicArticles = await api.fetchArticleByTopic(
         this.state.topic_name
       );
