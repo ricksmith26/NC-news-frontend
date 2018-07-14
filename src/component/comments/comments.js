@@ -68,7 +68,10 @@ class CommentsAdder extends Component {
             );
           })}
         </ul>
-        <MessageInput id="messageInput" />
+        <MessageInput
+          id="messageInput"
+          article_id={this.state.article.data._id}
+        />
         <br />
         <br />
       </div>

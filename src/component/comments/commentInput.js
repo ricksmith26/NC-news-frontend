@@ -21,7 +21,7 @@ class MessageInput extends React.Component {
   handleKeyPress = event => {
     if (event.keyCode === 13) {
       console.log('keyPress');
-      this.handlePostMessage('5b3b73b09289af05a338beb2', {
+      this.handlePostMessage(this.props.article_id, {
         body: this.state.userInput,
         created_by: 'jessjelly'
       });
@@ -35,12 +35,13 @@ class MessageInput extends React.Component {
   };
 
   handlePostMessage = async () => {
+    console.log(this.props.article_id, '<<<<<<<<<<');
     const comment = {
       body: this.state.userInput,
       created_by: 'jessjelly'
     };
 
-    await api.postComment('5b3b73b09289af05a338beb2', comment);
+    await api.postComment(this.props.article_id, comment);
     this.setState({ userInput: '' });
   };
 }
