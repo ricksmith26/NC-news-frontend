@@ -45,11 +45,13 @@ class CommentsAdder extends Component {
                 votes:{comment.votes}
                 {'  '}
                 <button
+                  className="voteUp"
                   onClick={() => api.voteComment(comment._id, { vote: 'up' })}
                 >
                   Vote up
                 </button>
                 <button
+                  className="voteDown"
                   onClick={() => api.voteComment(comment._id, { vote: 'down' })}
                 >
                   Vote down

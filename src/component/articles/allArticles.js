@@ -9,7 +9,6 @@ function AllArticles({ articles }) {
           return (
             <figure class="gallery-item">
               <div class="thumbnail">
-                <br />
                 <b>
                   <Link to={`/articles/${article._id}`}>
                     {' '}
@@ -22,7 +21,9 @@ function AllArticles({ articles }) {
                 <br />
                 <br />
                 <Link to={`/users/${article.created_by}`}>
-                  Author Profile: {article.created_by}
+                  <h4 className="author">
+                    Author Profile: {article.created_by}
+                  </h4>
                 </Link>
                 <br />
                 {article.belongs_to}

@@ -30,35 +30,26 @@ class App extends Component {
               src="https://northcoders.com/images/logos/learn_to_code_manchester_rw_logo.png"
             />
             <h1 className="App-title">News</h1>
+            <br />
           </div>
-          <br />
-          <br />
-          <div>
-            <Nav class="navButtons" />
+
+          <div className="navButtons">
+            <Nav />
           </div>
         </header>
         <nav class="nav">
           <br />
           <br />
-          <h3 class="nav3">
-            <Nav />
-          </h3>
+          <h3 class="nav3" />
         </nav>
         <main>
-          <div class="article">
-            <Articles
-              articles={this.state.articles}
-              topics={this.state.topics}
-            />
-          </div>
+          <Articles articles={this.state.articles} topics={this.state.topics} />
         </main>
         <aside>here</aside>
         <footer />
       </div>
     );
   }
-}
-{
 }
 
 function Nav() {

@@ -32,7 +32,7 @@ class ArticlesByTopic extends Component {
     }
     return (
       <div className="articlesDiv">
-        <h1>Search by Topic</h1>
+        <h1 className="search">Search by Topic</h1>
         <select id="topicList" onChange={this.handleTopicChange}>
           {Object.values(this.props.topics).map(topic => {
             return <option value={topic.slug}>{topic.title}</option>;
