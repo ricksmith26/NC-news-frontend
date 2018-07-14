@@ -16,7 +16,7 @@ class Users extends Component {
     console.log(this.state.users, '<<<<<<');
     return (
       <div className="userClass">
-        <img src={this.state.users.avatar_url} />
+        <img className="profileImg" src={this.state.users.avatar_url} />
         <h1>{this.state.users.username}</h1>
         <h2>{this.state.users._id}</h2>
         <br />

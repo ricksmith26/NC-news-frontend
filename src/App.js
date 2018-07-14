@@ -26,6 +26,7 @@ class App extends Component {
         {/* <Loading /> */}
         <Nav />
         <header className="App-header">
+          <img src="https://northcoders.com/images/logos/learn_to_code_manchester_rw_original.png" />
           <h1 className="App-title">Northcoder News</h1>
         </header>
         <p className="App-intro">Bringing the lasted news to Northcoders</p>

@@ -1,4 +1,15 @@
 body {
   max-width: 500px;
-  margin: auto;
+  margin-left: 20%;
+  margin-right: 20%;
+  background-color: grey;
+}
+header {
+  width: 50vw;
+  background-color: black;
+}
+
+img {
+  width: 50vw;
+  float: center;
 }
