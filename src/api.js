@@ -18,7 +18,7 @@ export const fetchArticleByTopic = async topic_name => {
   return res;
 };
 
-export const getUser = async username => {
+export const fetchUsers = async username => {
   const res = await axios.get(`${URL}/users/${username}`);
   return res;
 };

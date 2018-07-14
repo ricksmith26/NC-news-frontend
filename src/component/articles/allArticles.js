@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { voteArticle } from '../../api';
 
 function AllArticles({ articles }) {
   return (
@@ -18,7 +17,9 @@ function AllArticles({ articles }) {
               {article.body}
               <br />
               <br />
-              {article.created_by}
+              <Link to={`/users/${article.created_by}`}>
+                Author Profile: {article.created_by}
+              </Link>
               <br />
               {article.belongs_to}
               <br />

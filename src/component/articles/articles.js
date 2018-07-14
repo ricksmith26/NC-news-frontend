@@ -5,6 +5,7 @@ import ArticlesByTopic from './articlesByTopic';
 import CommentsAdder from '../comments/comments';
 import { Route } from 'react-router-dom';
 import fullArticleView from './fullArticleView';
+import Users from '../users/users';
 
 class Articles extends Component {
   state = {
@@ -39,6 +40,7 @@ class Articles extends Component {
           path="/articles/:article_id/"
           component={fullArticleView}
         />
+        <Route exact path="/users/:username" component={Users} />
       </div>
     );
   }
