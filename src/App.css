@@ -1,15 +1,144 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
 body {
-  max-width: 500px;
-  margin-left: 20%;
-  margin-right: 20%;
-  background-color: grey;
-}
-header {
-  width: 50vw;
+  height: 100vh;
   background-color: black;
+  font-family: 'Raleway', sans-serif;
 }
 
-img {
-  width: 50vw;
-  float: center;
+.container {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 0.5fr 6fr 0.5fr;
+  grid-template-areas:
+    'header header header'
+    'nav main aside'
+    'footer footer footer';
+  height: 97vh;
+}
+
+header {
+  grid-area: header;
+  background-color: black;
+
+  text-decoration-color: #e1ecf9;
+  width: 100%;
+  position: absolute;
+  font-family: 'Wendy One', sans-serif;
+  height: 17%;
+  font-size: 95%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+nav {
+  grid-area: nav;
+  background-color: #1f1f1f;
+
+  overflow: scroll;
+  font-family: 'Gaegu', cursive;
+  overflow: scroll;
+  overflow-x: hidden;
+  color: #bfd5ed;
+  margin-top: 20%;
+}
+main {
+  grid-area: main;
+  background-color: #e0e0d1;
+  font-family: 'Gaegu', cursive;
+  padding-right: 15px;
+  overflow: scroll;
+  overflow-x: hidden;
+  height: 90vh;
+  margin-top: 10%;
+}
+aside {
+  grid-area: aside;
+  background-color: #1f1f1f;
+  font-family: 'Gaegu', cursive;
+  margin-top: 10%;
+}
+
+footer {
+  grid-area: footer;
+  background-color: black;
+  font-family: 'Gaegu', cursive;
+  height: 1vh;
+}
+
+.logo {
+  padding-top: 1%;
+  height: 73%;
+}
+
+.article {
+  border: black;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.gallery-item {
+  margin: 10px;
+  -webkit-transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+.gallery-item .thumbnail {
+  height: 240px;
+  width: 290px;
+  overflow: scroll;
+  border: 2px solid GhostWhite;
+  border-radius: 4px;
+  padding: 2%;
+  background-color: whitesmoke;
+  font-family: 'Raleway', sans-serif;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+}
+
+.gallery-item .thumbnail::-webkit-scrollbar {
+  width: 2%;
+}
+
+.gallery-item .thumbnail::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.gallery-item .thumbnail::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+
+h1 {
+  font-size: 96%;
+  color: white;
+}
+
+nav .nav {
+  color: white;
+}
+
+h2 {
+  color: black;
+  text-decoration: underline;
+  text-decoration-color: black;
+}
+.nav3 {
+  font-size: 20%;
+  color: white;
+}
+ul {
+  justify-content: center;
+}
+
+.container header .navButtons {
+  justify-content: right;
 }

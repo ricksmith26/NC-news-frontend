@@ -22,19 +22,43 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        {/* <Loading /> */}
-        <Nav />
-        <header className="App-header">
-          <img src="https://northcoders.com/images/logos/learn_to_code_manchester_rw_original.png" />
-          <h1 className="App-title">Northcoder News</h1>
+      <div class="container">
+        <header>
+          <div>
+            <img
+              class="logo"
+              src="https://northcoders.com/images/logos/learn_to_code_manchester_rw_logo.png"
+            />
+            <h1 className="App-title">News</h1>
+          </div>
+          <br />
+          <br />
+          <div>
+            <Nav class="navButtons" />
+          </div>
         </header>
-        <p className="App-intro">Bringing the lasted news to Northcoders</p>
-
-        <Articles articles={this.state.articles} topics={this.state.topics} />
+        <nav class="nav">
+          <br />
+          <br />
+          <h3 class="nav3">
+            <Nav />
+          </h3>
+        </nav>
+        <main>
+          <div class="article">
+            <Articles
+              articles={this.state.articles}
+              topics={this.state.topics}
+            />
+          </div>
+        </main>
+        <aside>here</aside>
+        <footer />
       </div>
     );
   }
+}
+{
 }
 
 function Nav() {
