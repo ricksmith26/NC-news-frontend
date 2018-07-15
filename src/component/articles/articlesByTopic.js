@@ -19,7 +19,7 @@ class ArticlesByTopic extends Component {
     }
   }
   render() {
-  
+  //possible that the
     if (this.state.topicArticles.length === 0) {
       return (
         <div>

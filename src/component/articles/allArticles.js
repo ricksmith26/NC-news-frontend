@@ -5,16 +5,16 @@ function AllArticles({ articles }) {
    
   return (
     <div className="articlesDiv">
-      <div class="gallery">
+      <div className="gallery">
         {articles.map(function(article) {
-          console.log(article._id)
+       
           return (
-            <figure class="gallery-item">
-              <div class="thumbnail">
+            <figure className="gallery-item">
+              <div className="thumbnail">
                 <b>
                   <Link to={`/articles/${article._id}`}>
                     {' '}
-                    <h2 class="ArtTitle">{article.title}</h2>
+                    <h2 className="ArtTitle">{article.title}</h2>
                   </Link>
                 </b>
                 <br />

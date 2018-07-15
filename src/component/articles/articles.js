@@ -14,7 +14,7 @@ class Articles extends Component {
 
   render() {
     return (
-      <div className="articlesDiv">
+      <div>
         <Route
           exact
           path="/"

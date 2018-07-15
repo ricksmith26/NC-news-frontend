@@ -30,7 +30,7 @@ class fullArticleView extends Component {
   }
 
   render() {
-    // console.log(this.state.voteUp, '<<<<<<<<<');
+    console.log(this.state.article.length);
     if (!this.state.comments.length) return <h1>Loading...</h1>;
     return (
       <div className="full">
@@ -39,6 +39,7 @@ class fullArticleView extends Component {
           <br />
           <p>{this.state.article.data.body}</p>
         </div>
+        <div className="fullArticleData">
         <br />
         {this.state.article.data.created_by}
         <br />
@@ -66,6 +67,7 @@ class fullArticleView extends Component {
         >
           Vote down
         </button>{' '}
+        </div>
       </div>
     );
   }

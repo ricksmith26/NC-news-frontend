@@ -255,10 +255,10 @@ ul {
   background: whitesmoke;
   text-align: center;
   width: 90%;
-
+  justify-content: center;
   padding: 2%;
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 10%;
+  
 }
 
 .comments .comment {
@@ -289,15 +289,21 @@ ul {
   width: 80%;
   margin-left: 10%;
   margin-right: 10%;
+  padding-top: 3px;
+  padding-bottom: 3px;
 }
 .full .articleFull {
   background: whitesmoke;
   text-align: center;
   width: 90%;
-
+  
   padding: 2%;
-  margin-left: 5%;
-  margin-right: 5%;
+ 
+ 
+}
+.full  {
+  justify-content: center
+  
 }
 
 @media screen 

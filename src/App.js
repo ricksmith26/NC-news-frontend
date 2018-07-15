@@ -21,7 +21,7 @@ class App extends Component {
 
   render() {
     return (
-      <div class="container">
+      <div className="container">
         <header id="Northcoder News" label="Northcoder News">
           <div>
             <NavLink exact to="/">
@@ -39,7 +39,7 @@ class App extends Component {
           </div>
         </header>
         <nav className="nav">
-          <h3 class="nav3" />
+          <h3 className="nav3" />
         </nav>
         <main>
           <Articles articles={this.state.articles} topics={this.state.topics} />

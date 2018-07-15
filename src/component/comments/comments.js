@@ -35,7 +35,7 @@ class CommentsAdder extends Component {
       <div className="comments">
         <div className="articleAboveComments">
           <h2>{this.state.article.data.title}</h2>
-          <h3>{this.state.article.data.body}</h3>
+          <p>{this.state.article.data.body}</p>
         </div>
         {this.state.comments
           .sort(function(a, b) {
@@ -69,7 +69,7 @@ class CommentsAdder extends Component {
                   </button>
                   <br />
                   <br />
-                  {moment(comment.created_at).fromNow()}
+                  {moment(comment.created_at).fromNow('LLL')}
                   <br />
                   <br />
                   {deleteC(
