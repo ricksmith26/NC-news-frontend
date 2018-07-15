@@ -37,10 +37,10 @@ class ArticlesByTopic extends Component {
           {Object.values(this.props.topics).map(topic => {
             return <option value={topic.slug}>{topic.title}</option>;
           })}
-        </select>;
+        </select>
       
         <AllArticles articles={[...this.state.topicArticles]} />
-      </div>;
+      </div>
   }
   handleTopicChange = event => {
     this.setState({ topic_name: event.target.value });
