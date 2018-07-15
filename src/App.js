@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './App.css';
 import * as api from './api';
 import Articles from './component/articles/articles';
-// import Loading from './component/loadingScreen';
 
 import { NavLink } from 'react-router-dom';
 
@@ -23,14 +22,16 @@ class App extends Component {
   render() {
     return (
       <div class="container">
-        <header id="Northcoder News">
+        <header id="Northcoder News" label="Northcoder News">
           <div>
-            <img
-              className="logo"
-              src="https://northcoders.com/images/logos/learn_to_code_manchester_rw_logo.png"
-            />
+            <NavLink exact to="/">
+              <img
+                id="logo"
+                className="logo"
+                src="https://northcoders.com/images/logos/learn_to_code_manchester_rw_logo.png"
+              />
+            </NavLink>
             <h1 className="App-title">News</h1>
-            <br />
           </div>
 
           <div className="navButtons">
@@ -38,8 +39,6 @@ class App extends Component {
           </div>
         </header>
         <nav className="nav">
-          <br />
-          <br />
           <h3 class="nav3" />
         </nav>
         <main>
@@ -53,10 +52,10 @@ class App extends Component {
 }
 
 function Nav() {
-  // const activeStyle = {
-  //   background: 'white',
-  //   color: 'black
-  // };
+  const activeStyle = {
+    background: 'white'
+   
+  };
   return (
     <div>
       <NavLink exact to="/">

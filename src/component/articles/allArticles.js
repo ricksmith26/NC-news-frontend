@@ -12,7 +12,7 @@ function AllArticles({ articles }) {
                 <b>
                   <Link to={`/articles/${article._id}`}>
                     {' '}
-                    <h2>{article.title}</h2>
+                    <h2 class="ArtTitle">{article.title}</h2>
                   </Link>
                 </b>
                 <br />

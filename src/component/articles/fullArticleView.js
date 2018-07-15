@@ -6,7 +6,8 @@ import { Link } from 'react-router-dom';
 class fullArticleView extends Component {
   state = {
     comments: [],
-    article: []
+    article: [],
+    voteUp: false
   };
   async componentDidMount() {
     const comments = await api.getCommentsForArticle(
@@ -29,11 +30,15 @@ class fullArticleView extends Component {
   }
 
   render() {
+    // console.log(this.state.voteUp, '<<<<<<<<<');
     if (!this.state.comments.length) return <h1>Loading...</h1>;
     return (
-      <div class="full">
-        <h2>{this.state.article.data.title}</h2>
-        <h3>{this.state.article.data.body}</h3>
+      <div className="full">
+        <div className="articleFull">
+          <h1 className="ArtTitle">{this.state.article.data.title}</h1>
+          <br />
+          <p>{this.state.article.data.body}</p>
+        </div>
         <br />
         {this.state.article.data.created_by}
         <br />

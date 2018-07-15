@@ -129,9 +129,13 @@ footer {
   outline: 1px solid slategrey;
 }
 
-h1 {
+.App-title {
   font-size: 96%;
   color: white;
+}
+
+.ArtTitle {
+  text-align: center;
 }
 
 nav .nav {
@@ -231,15 +235,14 @@ ul {
   padding-top: 15%;
   margin-top: 3px;
   color: black;
-  margin-left: 40%;
-  margin-right: 45%;
+  text-align: center;
   font-size: 30px;
   width: 100%;
   font-family: 'Raleway', sans-serif;
 }
 
 .comments {
-  padding-top: 3%;
+  padding-top: 12%;
   width: 80%;
   font-family: 'Raleway', sans-serif;
   margin-left: 5%;
@@ -266,6 +269,7 @@ ul {
   text-align: center;
 }
 .userInfo .profileImg {
+  padding-top: 3%;
   width: 30%;
 }
 
@@ -283,4 +287,13 @@ ul {
   width: 80%;
   margin-left: 10%;
   margin-right: 10%;
+}
+.full .articleFull {
+  background: whitesmoke;
+  text-align: center;
+  width: 90%;
+
+  padding: 2%;
+  margin-left: 5%;
+  margin-right: 5%;
 }
