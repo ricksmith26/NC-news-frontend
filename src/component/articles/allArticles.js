@@ -2,10 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 function AllArticles({ articles }) {
+   
   return (
     <div className="articlesDiv">
       <div class="gallery">
         {articles.map(function(article) {
+          console.log(article._id)
           return (
             <figure class="gallery-item">
               <div class="thumbnail">

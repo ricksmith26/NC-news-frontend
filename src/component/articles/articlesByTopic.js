@@ -19,6 +19,7 @@ class ArticlesByTopic extends Component {
     }
   }
   render() {
+  
     if (this.state.topicArticles.length === 0) {
       return (
         <div>
@@ -31,16 +32,15 @@ class ArticlesByTopic extends Component {
         </div>
       );
     }
-    return (
-      <div className="articlesDiv">
+    return <div className="articlesDiv">
         <select id="topicList" onChange={this.handleTopicChange}>
           {Object.values(this.props.topics).map(topic => {
             return <option value={topic.slug}>{topic.title}</option>;
           })}
         </select>;
-        <AllArticles articles={this.state.topicArticles} />
-      </div>
-    );
+      
+        <AllArticles articles={[...this.state.topicArticles]} />
+      </div>;
   }
   handleTopicChange = event => {
     this.setState({ topic_name: event.target.value });

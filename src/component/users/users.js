@@ -4,6 +4,8 @@ import { Component } from 'react';
 import AllArticles from '../articles/allArticles';
 import missing from './missing.jpg';
 
+
+
 class Users extends Component {
   state = {
     users: [],
