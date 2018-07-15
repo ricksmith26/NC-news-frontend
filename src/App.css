@@ -303,7 +303,30 @@ ul {
   and (device-width: 320px) 
   and (device-height: 640px) 
   and (-webkit-device-pixel-ratio: 2) {
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
 
+.gallery-item {
+  margin: 10px;
+  -webkit-transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+.gallery-item .thumbnail {
+  height: 240px;
+  width: 290px;
+  overflow: scroll;
+  border: 2px solid GhostWhite;
+  border-radius: 4px;
+  padding: 2%;
+  background-color: whitesmoke;
+  font-family: 'Raleway', sans-serif;
+}
 }
 
 /* Portrait */
@@ -312,6 +335,30 @@ ul {
   and (device-height: 640px) 
   and (-webkit-device-pixel-ratio: 2) 
   and (orientation: portrait) {
+    .gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.gallery-item {
+  margin: 10px;
+  -webkit-transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+.gallery-item .thumbnail {
+  height: 240px;
+  width: 290px;
+  overflow: scroll;
+  border: 2px solid GhostWhite;
+  border-radius: 4px;
+  padding: 2%;
+  background-color: whitesmoke;
+  font-family: 'Raleway', sans-serif;
+}
 
 }
 
@@ -321,6 +368,30 @@ ul {
   and (device-height: 640px) 
   and (-webkit-device-pixel-ratio: 2) 
   and (orientation: landscape) {
+    .gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.gallery-item {
+  margin: 10px;
+  -webkit-transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+.gallery-item .thumbnail {
+  height: 240px;
+  width: 290px;
+  overflow: scroll;
+  border: 2px solid GhostWhite;
+  border-radius: 4px;
+  padding: 2%;
+  background-color: whitesmoke;
+  font-family: 'Raleway', sans-serif;
+}
 
 }
 
@@ -331,7 +402,30 @@ ul {
   and (device-width: 320px) 
   and (device-height: 640px) 
   and (-webkit-device-pixel-ratio: 3) {
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
 
+.gallery-item {
+  margin: 10px;
+  -webkit-transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+.gallery-item .thumbnail {
+  height: 240px;
+  width: 290px;
+  overflow: scroll;
+  border: 2px solid GhostWhite;
+  border-radius: 4px;
+  padding: 2%;
+  background-color: whitesmoke;
+  font-family: 'Raleway', sans-serif;
+}
 }
 
 /* Portrait */
@@ -340,7 +434,30 @@ ul {
   and (device-height: 640px) 
   and (-webkit-device-pixel-ratio: 3) 
   and (orientation: portrait) {
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
 
+.gallery-item {
+  margin: 10px;
+  -webkit-transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+.gallery-item .thumbnail {
+  height: 240px;
+  width: 290px;
+  overflow: scroll;
+  border: 2px solid GhostWhite;
+  border-radius: 4px;
+  padding: 2%;
+  background-color: whitesmoke;
+  font-family: 'Raleway', sans-serif;
+}
 }
 
 /* Landscape */
@@ -349,7 +466,30 @@ ul {
   and (device-height: 640px) 
   and (-webkit-device-pixel-ratio: 3) 
   and (orientation: landscape) {
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
 
+.gallery-item {
+  margin: 10px;
+  -webkit-transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+.gallery-item .thumbnail {
+  height: 240px;
+  width: 290px;
+  overflow: scroll;
+  border: 2px solid GhostWhite;
+  border-radius: 4px;
+  padding: 2%;
+  background-color: whitesmoke;
+  font-family: 'Raleway', sans-serif;
+}
 }
 
 /* ----------- Galaxy S6 ----------- */
@@ -359,7 +499,30 @@ ul {
   and (device-width: 360px) 
   and (device-height: 640px) 
   and (-webkit-device-pixel-ratio: 4) {
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
 
+.gallery-item {
+  margin: 10px;
+  -webkit-transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+.gallery-item .thumbnail {
+  height: 240px;
+  width: 290px;
+  overflow: scroll;
+  border: 2px solid GhostWhite;
+  border-radius: 4px;
+  padding: 2%;
+  background-color: whitesmoke;
+  font-family: 'Raleway', sans-serif;
+}
 }
 
 /* Portrait */
@@ -368,7 +531,30 @@ ul {
   and (device-height: 640px) 
   and (-webkit-device-pixel-ratio: 4) 
   and (orientation: portrait) {
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
 
+.gallery-item {
+  margin: 10px;
+  -webkit-transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+.gallery-item .thumbnail {
+  height: 240px;
+  width: 290px;
+  overflow: scroll;
+  border: 2px solid GhostWhite;
+  border-radius: 4px;
+  padding: 2%;
+  background-color: whitesmoke;
+  font-family: 'Raleway', sans-serif;
+}
 }
 
 /* Landscape */
@@ -377,7 +563,30 @@ ul {
   and (device-height: 640px) 
   and (-webkit-device-pixel-ratio: 4) 
   and (orientation: landscape) {
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
 
+.gallery-item {
+  margin: 10px;
+  -webkit-transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+.gallery-item .thumbnail {
+  height: 240px;
+  width: 290px;
+  overflow: scroll;
+  border: 2px solid GhostWhite;
+  border-radius: 4px;
+  padding: 2%;
+  background-color: whitesmoke;
+  font-family: 'Raleway', sans-serif;
+}
 }
 /* ----------- iPhone 4 and 4S ----------- */
 
@@ -386,7 +595,30 @@ ul {
   and (min-device-width: 320px) 
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2) {
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
 
+.gallery-item {
+  margin: 10px;
+  -webkit-transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+.gallery-item .thumbnail {
+  height: 240px;
+  width: 290px;
+  overflow: scroll;
+  border: 2px solid GhostWhite;
+  border-radius: 4px;
+  padding: 2%;
+  background-color: whitesmoke;
+  font-family: 'Raleway', sans-serif;
+}
 }
 
 /* Portrait */
@@ -395,6 +627,30 @@ ul {
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
+    .gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.gallery-item {
+  margin: 10px;
+  -webkit-transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+.gallery-item .thumbnail {
+  height: 240px;
+  width: 290px;
+  overflow: scroll;
+  border: 2px solid GhostWhite;
+  border-radius: 4px;
+  padding: 2%;
+  background-color: whitesmoke;
+  font-family: 'Raleway', sans-serif;
+}
 }
 
 /* Landscape */
@@ -403,7 +659,30 @@ ul {
   and (max-device-width: 480px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) {
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
 
+.gallery-item {
+  margin: 10px;
+  -webkit-transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+.gallery-item .thumbnail {
+  height: 240px;
+  width: 290px;
+  overflow: scroll;
+  border: 2px solid GhostWhite;
+  border-radius: 4px;
+  padding: 2%;
+  background-color: whitesmoke;
+  font-family: 'Raleway', sans-serif;
+}
 }
 
 /* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
@@ -413,7 +692,30 @@ ul {
   and (min-device-width: 320px) 
   and (max-device-width: 568px)
   and (-webkit-min-device-pixel-ratio: 2) {
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
 
+.gallery-item {
+  margin: 10px;
+  -webkit-transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+.gallery-item .thumbnail {
+  height: 240px;
+  width: 290px;
+  overflow: scroll;
+  border: 2px solid GhostWhite;
+  border-radius: 4px;
+  padding: 2%;
+  background-color: whitesmoke;
+  font-family: 'Raleway', sans-serif;
+}
 }
 
 /* Portrait */
@@ -422,6 +724,30 @@ ul {
   and (max-device-width: 568px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) {
+    .gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.gallery-item {
+  margin: 10px;
+  -webkit-transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+.gallery-item .thumbnail {
+  height: 240px;
+  width: 290px;
+  overflow: scroll;
+  border: 2px solid GhostWhite;
+  border-radius: 4px;
+  padding: 2%;
+  background-color: whitesmoke;
+  font-family: 'Raleway', sans-serif;
+}
 }
 
 /* Landscape */
@@ -430,7 +756,30 @@ ul {
   and (max-device-width: 568px)
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) {
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
 
+.gallery-item {
+  margin: 10px;
+  -webkit-transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+.gallery-item .thumbnail {
+  height: 240px;
+  width: 290px;
+  overflow: scroll;
+  border: 2px solid GhostWhite;
+  border-radius: 4px;
+  padding: 2%;
+  background-color: whitesmoke;
+  font-family: 'Raleway', sans-serif;
+}
 }
 
 /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
@@ -440,7 +789,30 @@ ul {
   and (min-device-width: 375px) 
   and (max-device-width: 667px) 
   and (-webkit-min-device-pixel-ratio: 2) { 
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
 
+.gallery-item {
+  margin: 10px;
+  -webkit-transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+.gallery-item .thumbnail {
+  height: 240px;
+  width: 290px;
+  overflow: scroll;
+  border: 2px solid GhostWhite;
+  border-radius: 4px;
+  padding: 2%;
+  background-color: whitesmoke;
+  font-family: 'Raleway', sans-serif;
+}
 }
 
 /* Portrait */
@@ -449,7 +821,30 @@ ul {
   and (max-device-width: 667px) 
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: portrait) { 
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
 
+.gallery-item {
+  margin: 10px;
+  -webkit-transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+.gallery-item .thumbnail {
+  height: 240px;
+  width: 290px;
+  overflow: scroll;
+  border: 2px solid GhostWhite;
+  border-radius: 4px;
+  padding: 2%;
+  background-color: whitesmoke;
+  font-family: 'Raleway', sans-serif;
+}
 }
 
 /* Landscape */
@@ -458,7 +853,30 @@ ul {
   and (max-device-width: 667px) 
   and (-webkit-min-device-pixel-ratio: 2)
   and (orientation: landscape) { 
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
 
+.gallery-item {
+  margin: 10px;
+  -webkit-transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+.gallery-item .thumbnail {
+  height: 240px;
+  width: 290px;
+  overflow: scroll;
+  border: 2px solid GhostWhite;
+  border-radius: 4px;
+  padding: 2%;
+  background-color: whitesmoke;
+  font-family: 'Raleway', sans-serif;
+}
 }
 
 /* ----------- iPhone 6+, 7+ and 8+ ----------- */
@@ -468,7 +886,30 @@ ul {
   and (min-device-width: 414px) 
   and (max-device-width: 736px) 
   and (-webkit-min-device-pixel-ratio: 3) { 
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
 
+.gallery-item {
+  margin: 10px;
+  -webkit-transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+.gallery-item .thumbnail {
+  height: 240px;
+  width: 290px;
+  overflow: scroll;
+  border: 2px solid GhostWhite;
+  border-radius: 4px;
+  padding: 2%;
+  background-color: whitesmoke;
+  font-family: 'Raleway', sans-serif;
+}
 }
 
 /* Portrait */
@@ -477,7 +918,30 @@ ul {
   and (max-device-width: 736px) 
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: portrait) { 
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
 
+.gallery-item {
+  margin: 10px;
+  -webkit-transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+.gallery-item .thumbnail {
+  height: 240px;
+  width: 290px;
+  overflow: scroll;
+  border: 2px solid GhostWhite;
+  border-radius: 4px;
+  padding: 2%;
+  background-color: whitesmoke;
+  font-family: 'Raleway', sans-serif;
+}
 }
 
 /* Landscape */
@@ -486,7 +950,30 @@ ul {
   and (max-device-width: 736px) 
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: landscape) { 
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
 
+.gallery-item {
+  margin: 10px;
+  -webkit-transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+.gallery-item .thumbnail {
+  height: 240px;
+  width: 290px;
+  overflow: scroll;
+  border: 2px solid GhostWhite;
+  border-radius: 4px;
+  padding: 2%;
+  background-color: whitesmoke;
+  font-family: 'Raleway', sans-serif;
+}
 }
 
 /* ----------- iPhone X ----------- */
@@ -496,7 +983,30 @@ ul {
   and (min-device-width: 375px) 
   and (max-device-width: 812px) 
   and (-webkit-min-device-pixel-ratio: 3) { 
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
 
+.gallery-item {
+  margin: 10px;
+  -webkit-transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+.gallery-item .thumbnail {
+  height: 240px;
+  width: 290px;
+  overflow: scroll;
+  border: 2px solid GhostWhite;
+  border-radius: 4px;
+  padding: 2%;
+  background-color: whitesmoke;
+  font-family: 'Raleway', sans-serif;
+}
 }
 
 /* Portrait */
@@ -505,7 +1015,30 @@ ul {
   and (max-device-width: 812px) 
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: portrait) { 
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
 
+.gallery-item {
+  margin: 10px;
+  -webkit-transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+.gallery-item .thumbnail {
+  height: 240px;
+  width: 290px;
+  overflow: scroll;
+  border: 2px solid GhostWhite;
+  border-radius: 4px;
+  padding: 2%;
+  background-color: whitesmoke;
+  font-family: 'Raleway', sans-serif;
+}
 }
 
 /* Landscape */
@@ -514,14 +1047,60 @@ ul {
   and (max-device-width: 812px) 
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: landscape) { 
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
 
+.gallery-item {
+  margin: 10px;
+  -webkit-transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+.gallery-item .thumbnail {
+  height: 240px;
+  width: 290px;
+  overflow: scroll;
+  border: 2px solid GhostWhite;
+  border-radius: 4px;
+  padding: 2%;
+  background-color: whitesmoke;
+  font-family: 'Raleway', sans-serif;
+}
 }
 
 @media screen 
   and (device-width: 360px) 
   and (device-height: 640px) 
   and (-webkit-device-pixel-ratio: 3) {
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
 
+.gallery-item {
+  margin: 10px;
+  -webkit-transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+.gallery-item .thumbnail {
+  height: 240px;
+  width: 290px;
+  overflow: scroll;
+  border: 2px solid GhostWhite;
+  border-radius: 4px;
+  padding: 2%;
+  background-color: whitesmoke;
+  font-family: 'Raleway', sans-serif;
+}
 }
 
 /* Portrait */
@@ -530,7 +1109,30 @@ ul {
   and (device-height: 640px) 
   and (-webkit-device-pixel-ratio: 3) 
   and (orientation: portrait) {
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
 
+.gallery-item {
+  margin: 10px;
+  -webkit-transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+.gallery-item .thumbnail {
+  height: 240px;
+  width: 290px;
+  overflow: scroll;
+  border: 2px solid GhostWhite;
+  border-radius: 4px;
+  padding: 2%;
+  background-color: whitesmoke;
+  font-family: 'Raleway', sans-serif;
+}
 }
 
 /* Landscape */
@@ -539,7 +1141,30 @@ ul {
   and (device-height: 640px) 
   and (-webkit-device-pixel-ratio: 3) 
   and (orientation: landscape) {
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
 
+.gallery-item {
+  margin: 10px;
+  -webkit-transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+.gallery-item .thumbnail {
+  height: 240px;
+  width: 290px;
+  overflow: scroll;
+  border: 2px solid GhostWhite;
+  border-radius: 4px;
+  padding: 2%;
+  background-color: whitesmoke;
+  font-family: 'Raleway', sans-serif;
+}
 }
 
 /* ----------- Google Pixel XL ----------- */
@@ -549,7 +1174,30 @@ ul {
   and (device-width: 360px) 
   and (device-height: 640px) 
   and (-webkit-device-pixel-ratio: 4) {
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
 
+.gallery-item {
+  margin: 10px;
+  -webkit-transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+.gallery-item .thumbnail {
+  height: 240px;
+  width: 290px;
+  overflow: scroll;
+  border: 2px solid GhostWhite;
+  border-radius: 4px;
+  padding: 2%;
+  background-color: whitesmoke;
+  font-family: 'Raleway', sans-serif;
+}
 }
 
 /* Portrait */
@@ -558,7 +1206,30 @@ ul {
   and (device-height: 640px) 
   and (-webkit-device-pixel-ratio: 4) 
   and (orientation: portrait) {
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
 
+.gallery-item {
+  margin: 10px;
+  -webkit-transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+.gallery-item .thumbnail {
+  height: 240px;
+  width: 290px;
+  overflow: scroll;
+  border: 2px solid GhostWhite;
+  border-radius: 4px;
+  padding: 2%;
+  background-color: whitesmoke;
+  font-family: 'Raleway', sans-serif;
+}
 }
 
 /* Landscape */
@@ -567,14 +1238,60 @@ ul {
   and (device-height: 640px) 
   and (-webkit-device-pixel-ratio: 4) 
   and (orientation: landscape) {
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
 
+.gallery-item {
+  margin: 10px;
+  -webkit-transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+.gallery-item .thumbnail {
+  height: 240px;
+  width: 290px;
+  overflow: scroll;
+  border: 2px solid GhostWhite;
+  border-radius: 4px;
+  padding: 2%;
+  background-color: whitesmoke;
+  font-family: 'Raleway', sans-serif;
+}
 }
 
 @media screen 
   and (device-width: 360px) 
   and (device-height: 640px) 
   and (-webkit-device-pixel-ratio: 3) {
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
 
+.gallery-item {
+  margin: 10px;
+  -webkit-transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+.gallery-item .thumbnail {
+  height: 240px;
+  width: 290px;
+  overflow: scroll;
+  border: 2px solid GhostWhite;
+  border-radius: 4px;
+  padding: 2%;
+  background-color: whitesmoke;
+  font-family: 'Raleway', sans-serif;
+}
 }
 
 /* Portrait */
@@ -583,7 +1300,30 @@ ul {
   and (device-height: 640px) 
   and (-webkit-device-pixel-ratio: 3) 
   and (orientation: portrait) {
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
 
+.gallery-item {
+  margin: 10px;
+  -webkit-transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+.gallery-item .thumbnail {
+  height: 240px;
+  width: 290px;
+  overflow: scroll;
+  border: 2px solid GhostWhite;
+  border-radius: 4px;
+  padding: 2%;
+  background-color: whitesmoke;
+  font-family: 'Raleway', sans-serif;
+}
 }
 
 /* Landscape */
@@ -592,14 +1332,60 @@ ul {
   and (device-height: 640px) 
   and (-webkit-device-pixel-ratio: 3) 
   and (orientation: landscape) {
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
 
+.gallery-item {
+  margin: 10px;
+  -webkit-transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+.gallery-item .thumbnail {
+  height: 240px;
+  width: 290px;
+  overflow: scroll;
+  border: 2px solid GhostWhite;
+  border-radius: 4px;
+  padding: 2%;
+  background-color: whitesmoke;
+  font-family: 'Raleway', sans-serif;
+}
 }
 
 /* Portrait and Landscape */
 @media screen 
   and (device-width: 480px) 
   and (device-height: 800px) {
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
 
+.gallery-item {
+  margin: 10px;
+  -webkit-transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+.gallery-item .thumbnail {
+  height: 240px;
+  width: 290px;
+  overflow: scroll;
+  border: 2px solid GhostWhite;
+  border-radius: 4px;
+  padding: 2%;
+  background-color: whitesmoke;
+  font-family: 'Raleway', sans-serif;
+}
 }
 
 /* Portrait */
@@ -607,7 +1393,30 @@ ul {
   and (device-width: 480px) 
   and (device-height: 800px)  
   and (orientation: portrait) {
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
 
+.gallery-item {
+  margin: 10px;
+  -webkit-transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+.gallery-item .thumbnail {
+  height: 240px;
+  width: 290px;
+  overflow: scroll;
+  border: 2px solid GhostWhite;
+  border-radius: 4px;
+  padding: 2%;
+  background-color: whitesmoke;
+  font-family: 'Raleway', sans-serif;
+}
 }
 
 /* Landscape */
@@ -615,7 +1424,30 @@ ul {
   and (device-width: 480px) 
   and (device-height: 800px) 
   and (orientation: landscape) {
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
 
+.gallery-item {
+  margin: 10px;
+  -webkit-transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+.gallery-item .thumbnail {
+  height: 240px;
+  width: 290px;
+  overflow: scroll;
+  border: 2px solid GhostWhite;
+  border-radius: 4px;
+  padding: 2%;
+  background-color: whitesmoke;
+  font-family: 'Raleway', sans-serif;
+}
 }
 
 /* ----------- Non-Retina Screens ----------- */
