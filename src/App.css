@@ -4,6 +4,7 @@ body {
   height: 100vh;
   background-color: black;
   font-family: 'Raleway', sans-serif;
+  width: 100vw;
 }
 
 .container {
@@ -28,8 +29,10 @@ header {
   height: 17%;
   font-size: 95%;
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
 }
 nav {
   grid-area: nav;
@@ -50,7 +53,7 @@ main {
   overflow: scroll;
   overflow-x: hidden;
   height: 90vh;
-  margin-top: 10%;
+  margin-top: 8%;
 }
 aside {
   grid-area: aside;
@@ -66,17 +69,23 @@ footer {
   height: 1vh;
 }
 
-.logo {
+.container .logo {
   padding-top: 1%;
-  height: 35px;
+  height: 50px;
+  animation: App-logo-spin infinite 20s;
+  padding-left: 50px;
 }
-/* 
-.article {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 20px;
-} */
+
+.container .App-title {
+  padding-left: 50px;
+}
+
+.container .navButtons {
+  padding-right: 50px;
+  text-decoration: underline;
+  text-decoration-color: whitesmoke;
+  color: #e1ecf9;
+}
 
 .gallery {
   display: flex;
@@ -146,10 +155,11 @@ ul {
 }
 
 .full {
-  padding-top: 10px;
+  padding-top: 12%;
   width: 80%;
   margin: auto;
   font-family: 'Raleway', sans-serif;
+  padding-bottom: 12%;
 }
 
 .voteUp {
@@ -163,7 +173,8 @@ ul {
   color: #ffffff;
   font-family: Arial;
   font-size: 17px;
-  padding: 1px;
+  padding-left: 7px;
+  padding-right: 7px;
 
   text-decoration: none;
   text-shadow: 0px 1px 0px #2f6627;
@@ -205,12 +216,19 @@ ul {
   text-decoration-color: black;
 }
 #topicList {
-  margin-left: 45%;
+  text-align: center;
+  margin-left: 37%;
+  margin-top: 7%;
+  margin-right: 37%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 1%;
+  padding-bottom: 1%;
   font-family: 'Raleway', sans-serif;
 }
 .search {
   margin-top: 3%;
-  padding-top: 5px;
+  padding-top: 15%;
   margin-top: 3px;
   color: black;
   margin-left: 40%;
@@ -218,4 +236,51 @@ ul {
   font-size: 30px;
   width: 100%;
   font-family: 'Raleway', sans-serif;
+}
+
+.comments {
+  padding-top: 3%;
+  width: 80%;
+  font-family: 'Raleway', sans-serif;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.articleAboveComments {
+  background: whitesmoke;
+  text-align: center;
+  width: 90%;
+
+  padding: 2%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.comments .comment {
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.userInfo {
+  text-align: center;
+}
+.userInfo .profileImg {
+  width: 30%;
+}
+
+.commentLink {
+  color: black;
+  text-decoration: underline;
+  text-decoration-color: black;
+}
+
+.messageInputContainer {
+  width: 100%;
+}
+
+.messageInputContainer .commentBox {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
 }

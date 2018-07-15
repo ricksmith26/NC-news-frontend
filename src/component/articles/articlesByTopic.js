@@ -22,17 +22,17 @@ class ArticlesByTopic extends Component {
     if (this.state.topicArticles.length === 0) {
       return (
         <div>
+          <h1 className="search">Search by Topic</h1>
           <select id="topicList" onChange={this.handleTopicChange}>
             {Object.values(this.props.topics).map(topic => {
               return <option value={topic.slug}>{topic.title}</option>;
             })}
-          </select>;
+          </select>
         </div>
       );
     }
     return (
       <div className="articlesDiv">
-        <h1 className="search">Search by Topic</h1>
         <select id="topicList" onChange={this.handleTopicChange}>
           {Object.values(this.props.topics).map(topic => {
             return <option value={topic.slug}>{topic.title}</option>;

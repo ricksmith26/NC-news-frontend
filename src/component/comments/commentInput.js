@@ -10,6 +10,7 @@ class MessageInput extends React.Component {
     return (
       <div className="messageInputContainer">
         <input
+          className="commentBox"
           type="text"
           onKeyUp={this.handleKeyPress}
           onChange={this.handleInputChange}
@@ -20,7 +21,6 @@ class MessageInput extends React.Component {
   }
   handleKeyPress = event => {
     if (event.keyCode === 13) {
-      console.log('keyPress');
       this.handlePostMessage(this.props.article_id, {
         body: this.state.userInput,
         created_by: 'jessjelly'
@@ -35,7 +35,6 @@ class MessageInput extends React.Component {
   };
 
   handlePostMessage = async () => {
-    console.log(this.props.article_id, '<<<<<<<<<<');
     const comment = {
       body: this.state.userInput,
       created_by: 'jessjelly'

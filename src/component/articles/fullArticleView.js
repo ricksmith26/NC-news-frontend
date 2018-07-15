@@ -39,7 +39,10 @@ class fullArticleView extends Component {
         <br />
         <Link to={`/articles/${this.state.article.data._id}/comments`}>
           {' '}
-          <p> commments: {this.state.article.data.comments}</p>
+          <p className="commentLink">
+            {' '}
+            commments: {this.state.article.data.comments}
+          </p>
         </Link>
         <p> votes: {this.state.article.data.votes}</p>
         <button

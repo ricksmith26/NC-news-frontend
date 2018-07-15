@@ -23,10 +23,10 @@ class App extends Component {
   render() {
     return (
       <div class="container">
-        <header>
+        <header id="Northcoder News">
           <div>
             <img
-              class="logo"
+              className="logo"
               src="https://northcoders.com/images/logos/learn_to_code_manchester_rw_logo.png"
             />
             <h1 className="App-title">News</h1>
@@ -37,7 +37,7 @@ class App extends Component {
             <Nav />
           </div>
         </header>
-        <nav class="nav">
+        <nav className="nav">
           <br />
           <br />
           <h3 class="nav3" />
@@ -53,16 +53,17 @@ class App extends Component {
 }
 
 function Nav() {
-  const activeStyle = {
-    background: 'red'
-  };
+  // const activeStyle = {
+  //   background: 'white',
+  //   color: 'black
+  // };
   return (
     <div>
-      <NavLink exact to="/" activeStyle={activeStyle}>
+      <NavLink exact to="/">
         Home
       </NavLink>
       {` | `}
-      <NavLink exact to="/articlesByTopic" activeStyle={activeStyle}>
+      <NavLink exact to="/articlesByTopic">
         Search by topic
       </NavLink>
     </div>

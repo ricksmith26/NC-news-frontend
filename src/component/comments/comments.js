@@ -32,44 +32,56 @@ class CommentsAdder extends Component {
   render() {
     if (!this.state.comments.length) return <h1>Loading...</h1>;
     return (
-      <div>
-        <h2>{this.state.article.data.title}</h2>
-        <h3>{this.state.article.data.body}</h3>
-        <ul>
-          {this.state.comments.map(function(comment) {
+      <div className="comments">
+        <div className="articleAboveComments">
+          <h2>{this.state.article.data.title}</h2>
+          <h3>{this.state.article.data.body}</h3>
+        </div>
+        {this.state.comments
+          .sort(function(a, b) {
             return (
-              <li>
-                {comment.body}
-                <br />
-                <br />
-                votes:{comment.votes}
-                {'  '}
-                <button
-                  className="voteUp"
-                  onClick={() => api.voteComment(comment._id, { vote: 'up' })}
-                >
-                  Vote up
-                </button>
-                <button
-                  className="voteDown"
-                  onClick={() => api.voteComment(comment._id, { vote: 'down' })}
-                >
-                  Vote down
-                </button>
-                <br />
-                <br />
-                {moment(comment.created_at).fromNow()}
-                <br />
-                <br />
-                {deleteC(
-                  '5b3b73af9289af05a338beb1',
-                  comment.created_by,
-                  comment._id
-                )}
-              </li>
+              moment(a.created_at).format('X') -
+              moment(b.created_at).format('X')
+            );
+          })
+          .map(function(comment) {
+            return (
+              <div className="comment">
+                <p>
+                  {comment.body}
+                  <br />
+                  <br />
+                  votes:{comment.votes}
+                  {'  '}
+                  <button
+                    className="voteUp"
+                    onClick={() => api.voteComment(comment._id, { vote: 'up' })}
+                  >
+                    Vote up
+                  </button>
+                  <button
+                    className="voteDown"
+                    onClick={() =>
+                      api.voteComment(comment._id, { vote: 'down' })
+                    }
+                  >
+                    Vote down
+                  </button>
+                  <br />
+                  <br />
+                  {moment(comment.created_at).fromNow()}
+                  <br />
+                  <br />
+                  {deleteC(
+                    '5b3b73af9289af05a338beb1',
+                    comment.created_by,
+                    comment._id
+                  )}
+                </p>
+              </div>
             );
           })}
-        </ul>
+
         <MessageInput
           id="messageInput"
           article_id={this.state.article.data._id}
