@@ -28,7 +28,7 @@ class ArticlesByTopic extends Component {
     }
   }
   render() {
-  //possible that the
+    
     if (this.state.topicArticles.length === 0) {
       return (
         <div>
@@ -48,7 +48,7 @@ class ArticlesByTopic extends Component {
           })}
         </select>
       
-        <AllArticles articles={[...this.state.topicArticles]} />
+      <AllArticles articles={[...this.state.topicArticles]} user='5b3b73af9289af05a338beb1'/>
       </div>
   }
   handleTopicChange = event => {

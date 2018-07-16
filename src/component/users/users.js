@@ -42,7 +42,7 @@ class Users extends Component {
           <img
             className="profileImg"
             src={this.state.users.avatar_url}
-            alt="http://www.dreams.metroeve.com/wp-content/uploads/2017/10/www.dreams.metroeve.com-missing-dreams-meaning.jpg"
+            alt="User Avatar"
           />
           <h2>{this.state.users.username}'s</h2>
           <h2>Articles</h2>
