@@ -3,6 +3,7 @@ import * as api from '../../api';
 import moment from 'moment';
 import MessageInput from './commentInput';
 import deleteC from './delete';
+import userContext from  '../../context'
 
 class CommentsAdder extends Component {
   state = {
@@ -72,15 +73,19 @@ class CommentsAdder extends Component {
                   {moment(comment.created_at).fromNow('LLL')}
                   <br />
                   <br />
-                  {deleteC(
-                    '5b3b73af9289af05a338beb1',
+        <userContext.Consumer>
+                 { val => deleteC(
+                    {val},
                     comment.created_by,
                     comment._id
                   )}
+        </userContext.Consumer>
                 </p>
               </div>
             );
           })}
+
+        
 
         <MessageInput
           id="messageInput"
