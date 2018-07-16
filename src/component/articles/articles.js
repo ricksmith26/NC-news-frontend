@@ -15,39 +15,18 @@ class Articles extends Component {
   };
 
   render() {
-    return (
-      <div>
-        <Route
-          exact
-          path="/"
-          render={() => <AllArticles articles={this.props.articles} />}
-        />
-        <Route
-          exact
-          path="/articlesByTopic"
-          render={() => (
-            <ArticlesByTopic
-              topicArticles={this.props.topicArticles}
-              topics={this.props.topics}
-            />
-          )}
-        />
-        <Route
-          exact
-          path="/articles/:article_id/comments"
-          component={CommentsAdder}
-        />
-        <Route
-          exact
-          path="/articles/:article_id/"
-          component={fullArticleView}
-        />
+    return <div>
+        <Route exact path="/" render={() => <AllArticles articles={this.props.articles} />} />
+        <Route exact path="/articlesByTopic" render={() => <ArticlesByTopic topicArticles={this.props.topicArticles} topics={this.props.topics} />} />
+        <Route exact path="/articles/:article_id/comments" component={CommentsAdder} />
+        <Route exact path="/articles/:article_id/" component={fullArticleView} />
         <Route exact path="/articles/404" component={Error404} />
         <Route exact path="/articles/500" component={Error500} />
         <Route exact path="/users/:username" component={Users} />
+        <Route exact path="/users/500" component={Error500} />
+        <Route exact path="/users/404" component={Error404} />
 
-      </div>
-    );
+      </div>;
   }
 }
 
