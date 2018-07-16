@@ -3,19 +3,28 @@ import * as api from '../../api';
 import { Component } from 'react';
 import AllArticles from './allArticles';
 
+
 class ArticlesByTopic extends Component {
   state = {
     topicArticles: [],
     topic_name: ''
   };
 
+
+
   async componentDidUpdate(_, prevState) {
     if (prevState.topic_name !== this.state.topic_name) {
+      try {
       const topicArticles = await api.fetchArticleByTopic(
         this.state.topic_name
       );
 
-      this.setState({ topicArticles: topicArticles.data.articles });
+      this.setState({ topicArticles: topicArticles });
+      } catch(err){
+        if (err.response.status === 404 || err.response.status === 400) this.props.history.push("404");
+        else this.props.history.push("500");
+      }
+    
     }
   }
   render() {

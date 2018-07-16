@@ -5,6 +5,7 @@ const URL = 'https://northcodernewsapp.herokuapp.com/api';
 
 export const fetchArticles = async () => {
   const res = await axios.get(`${URL}/articles`);
+  console.log(res.data.articles, 'fetch articles')
   return res.data.articles;
 };
 
@@ -15,7 +16,8 @@ export const fetchTopics = async () => {
 
 export const fetchArticleByTopic = async topic_name => {
   const res = await axios.get(`${URL}/topics/${topic_name}/articles`);
-  return res;
+  console.log(res.data.articles);
+  return res.data.articles
 };
 
 export const fetchUsers = async username => {

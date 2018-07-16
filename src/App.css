@@ -306,6 +306,13 @@ ul {
   
 }
 
+.error404 {
+   font-family: 'Raleway', sans-serif;
+   width: 60%;
+   text-align: center;
+   margin-left: 20%
+}
+
 @media screen 
   and (device-width: 320px) 
   and (device-height: 640px) 

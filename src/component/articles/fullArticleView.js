@@ -10,6 +10,8 @@ class fullArticleView extends Component {
     voteUp: false
   };
   async componentDidMount() {
+
+    try {
     const comments = await api.getCommentsForArticle(
       this.props.match.params.article_id
     );
@@ -18,19 +20,28 @@ class fullArticleView extends Component {
     );
 
     this.setState({ comments, article });
+ 
+    } catch (err){
+      if (err.response.status === 404 || err.response.status === 400) this.props.history.push("404");
+      else this.props.history.push("500");}
   }
+
+
+
+
   async componentDidUpdate(_, prevState) {
     if (prevState.article.data !== this.state.article.data) {
+      try {
       const article = await api.getArticleById(
         this.props.match.params.article_id
       );
 
       this.setState({ article: article });
-    }
-  }
+    } catch(err) {if (err.response.status === 404 || err.response.status === 400) this.props.history.push("404");
+        else this.props.history.push("500")}
+  }}
 
   render() {
-    console.log(this.state.article.length);
     if (!this.state.comments.length) return <h1>Loading...</h1>;
     return (
       <div className="full">

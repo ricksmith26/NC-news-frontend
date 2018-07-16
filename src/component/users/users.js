@@ -13,6 +13,7 @@ class Users extends Component {
     filtered: []
   };
   async componentDidMount() {
+    try {
     const users = await api.fetchUsers(this.props.match.params.username);
     const articles = await api.fetchArticles();
     const user = this.props.match.params.username;
@@ -27,7 +28,12 @@ class Users extends Component {
       users: users.data[0],
       filtered: authorArticles(articles, user)
     });
+    } catch (err) {
+      if (err.response.status === 404 || err.response.status === 400) this.props.history.push("404");
+      else this.props.history.push("500");
+    }
   }
+
 
   render() {
     return (
