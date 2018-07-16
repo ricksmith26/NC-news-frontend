@@ -6,4 +6,14 @@ const state = {
 
 const userContext = React.createContext(state.username); //passing initial value
 
+export const conId = () => {
+  return (
+    <userContext.Consumer>
+      {val => {
+        val;
+      }}
+    </userContext.Consumer>
+  );
+};
+
 export default userContext;
