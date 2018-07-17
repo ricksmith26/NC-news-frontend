@@ -73,19 +73,9 @@ class CommentsAdder extends Component {
                   {moment(comment.created_at).fromNow('LLL')}
                   <br />
                   <br />
-                  {deleteC(
-                    '5b3b73af9289af05a338beb1',
-                    comment.created_by,
-                    comment._id
-                  )}
-                  {/* <userContext.Consumer>
-                 { val => deleteC(
-                    {val},
-                    comment.created_by,
-                    comment._id
-                  )}
-        </userContext.Consumer> */}
-                  {/* <userContext.Consumer>{val => <h1>{val}</h1>}</userContext.Consumer> */}
+                  <userContext.Consumer>
+                    {val => deleteC(val, comment.created_by, comment._id)}
+                  </userContext.Consumer>
                 </p>
               </div>
             );
